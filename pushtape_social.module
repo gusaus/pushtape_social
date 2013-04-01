@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Social features for Commerce kickstart.
+ * Social features for Pushtape.
  */
 
 include_once 'pushtape_social.features.inc';

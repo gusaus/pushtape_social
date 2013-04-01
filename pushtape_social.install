@@ -35,7 +35,7 @@ function pushtape_social_enable() {
   _features_restore('enable', $items);
   _features_restore('rebuild', $items);
 
-  $default_theme = variable_get('theme_default', 'omega_kickstart');
+  $default_theme = variable_get('theme_default', 'flux');
   // Make sure that the region list is populated for our theme.
   drupal_static_reset();
   _block_rehash($default_theme);
