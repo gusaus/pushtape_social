@@ -3,12 +3,6 @@ core = 7.x
 api = 2
 
 ; Originally in panels branch.
-projects[addthis][version] = 4.0-alpha2
-projects[addthis][subdir] = contrib
-
-projects[follow][version] = 1.0-alpha1
-projects[follow][subdir] = contrib
-
 projects[twitter][version] = 5.4
 projects[twitter][subdir] = contrib
 
