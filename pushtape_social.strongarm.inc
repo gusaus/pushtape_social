@@ -56,6 +56,5 @@ function pushtape_social_strongarm() {
   $strongarm->value = '0';
   $export['service_links_visibility_for_node'] = $strongarm;
 
-
   return $export;
 }
