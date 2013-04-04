@@ -10,8 +10,8 @@
 function pushtape_social_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-social-connection_follow-us-on-twitter:https://twitter.com/pushtape
-  $menu_links['menu-social-connection_follow-us-on-twitter:https://twitter.com/pushtape'] = array(
+  // Exported menu link: menu-social-connection:https://twitter.com/pushtape
+  $menu_links['menu-social-connection:https://twitter.com/pushtape'] = array(
     'menu_name' => 'menu-social-connection',
     'link_path' => 'https://twitter.com/pushtape',
     'router_path' => '',
@@ -33,8 +33,8 @@ function pushtape_social_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-49',
   );
-  // Exported menu link: menu-social-connection_like-us-on-facebook:https://www.facebook.com/pushtape
-  $menu_links['menu-social-connection_like-us-on-facebook:https://www.facebook.com/pushtape'] = array(
+  // Exported menu link: menu-social-connection:https://www.facebook.com/pushtape
+  $menu_links['menu-social-connection:https://www.facebook.com/pushtape'] = array(
     'menu_name' => 'menu-social-connection',
     'link_path' => 'https://www.facebook.com/pushtape',
     'router_path' => '',
@@ -56,34 +56,10 @@ function pushtape_social_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-50',
   );
-  // Exported menu link: menu-social-connection_what-we-like-on-pinterest:http://pinterest.com/
-  $menu_links['menu-social-connection_what-we-like-on-pinterest:http://pinterest.com/'] = array(
-    'menu_name' => 'menu-social-connection',
-    'link_path' => 'http://pinterest.com/',
-    'router_path' => '',
-    'link_title' => 'What We Like on Pinterest',
-    'options' => array(
-      'toolbar_expanded' => 0,
-      'toolbar_break' => 0,
-      'identifier' => 'menu-social-connection_what-we-like-on-pinterest:http://pinterest.com/',
-      'attributes' => array(
-        'class' => array(
-          0 => 'pinterest',
-        ),
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Follow Us on Twitter');
   t('Like us on Facebook');
-  t('What We Like on Pinterest');
 
 
   return $menu_links;

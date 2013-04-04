@@ -10,9 +10,33 @@
 function pushtape_social_defaultconfig_features() {
   return array(
     'pushtape_social' => array(
+      'strongarm' => 'strongarm',
       'views_default_views' => 'views_default_views',
     ),
   );
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function pushtape_social_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'twitter_consumer_key';
+  $strongarm->value = '7V2KPb6wRDYjLg2NkLoNQ';
+  $export['twitter_consumer_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'twitter_consumer_secret';
+  $strongarm->value = '3FA6wKhsCDy2ZvC3vCoTJ9FjBolufczrUMc7ClPnM';
+  $export['twitter_consumer_secret'] = $strongarm;
+
+  return $export;
 }
 
 /**
