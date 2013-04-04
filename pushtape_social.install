@@ -41,18 +41,18 @@ function pushtape_social_enable() {
   _block_rehash($default_theme);
 
   // Set the region of the connect-with-us menu block.
-  $fields = array(
-   'region' => 'footer_second',
-   'status' => 1,
-   'visibility' => 0,
-   'pages' => '',
-  );
-  db_update('block')
-    ->fields($fields)
-    ->condition('module', 'menu')
-    ->condition('delta', 'menu-social-connection')
-    ->condition('theme', $default_theme)
-    ->execute();
+//  $fields = array(
+//   'region' => 'footer_second',
+//   'status' => 1,
+//   'visibility' => 0,
+//   'pages' => '',
+//  );
+//  db_update('block')
+//    ->fields($fields)
+//    ->condition('module', 'menu')
+//    ->condition('delta', 'menu-social-connection')
+//    ->condition('theme', $default_theme)
+//    ->execute();
 
   // Add "email" field to OAuth connector.
   $values = array(
