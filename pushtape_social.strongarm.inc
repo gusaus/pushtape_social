@@ -13,6 +13,13 @@ function pushtape_social_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'service_links_category_types';
+  $strongarm->value = array();
+  $export['service_links_category_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'service_links_in_links';
   $strongarm->value = '2';
   $export['service_links_in_links'] = $strongarm;
@@ -30,6 +37,22 @@ function pushtape_social_strongarm() {
   $strongarm->name = 'service_links_label_in_node';
   $strongarm->value = '';
   $export['service_links_label_in_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'service_links_node_types';
+  $strongarm->value = array(
+    'album' => 'album',
+    'event' => 'event',
+    'news' => 'news',
+    'photoset' => 'photoset',
+    'track' => 'track',
+    'video' => 'video',
+    'panopoly_page' => 0,
+    'simplenews' => 0,
+  );
+  $export['service_links_node_types'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
