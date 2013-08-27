@@ -27,11 +27,11 @@ function pushtape_social_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
   );
   // Exported menu link: menu-social-connection:https://www.facebook.com/pushtape
   $menu_links['menu-social-connection:https://www.facebook.com/pushtape'] = array(
@@ -50,11 +50,11 @@ function pushtape_social_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
   );
   // Translatables
   // Included for use with string extractors like potx.

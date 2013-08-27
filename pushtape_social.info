@@ -20,14 +20,14 @@ dependencies[] = twitter
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = widget_services
-datestamp = 1365115232
+datestamp = 1376349353
 features[ctools][] = oauthconnector:oauthconnector:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[defaultconfig][] = strongarm:twitter_consumer_key
 features[defaultconfig][] = strongarm:twitter_consumer_secret
 features[defaultconfig][] = views_default_views:tweets
-features[features_api][] = api:1
+features[features_api][] = api:2
 features[menu_custom][] = menu-social-connection
 features[menu_links][] = menu-social-connection:https://twitter.com/pushtape
 features[menu_links][] = menu-social-connection:https://www.facebook.com/pushtape
@@ -42,10 +42,3 @@ features[variable][] = service_links_node_types
 features[variable][] = service_links_show
 features[variable][] = service_links_style
 features[variable][] = service_links_visibility_for_node
-
-; Information added by drupal.org packaging script on 2013-01-26
-version = "7.x-2.2"
-core = "7.x"
-project = "pushtape"
-datestamp = "1359159361"
-
