@@ -50,7 +50,6 @@ function pushtape_social_strongarm() {
     'track' => 'track',
     'video' => 'video',
     'panopoly_page' => 0,
-    'simplenews' => 0,
   );
   $export['service_links_node_types'] = $strongarm;
 
@@ -59,9 +58,12 @@ function pushtape_social_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'service_links_show';
   $strongarm->value = array(
+    'facebook_share' => 1,
     'twitter_widget' => 1,
     'facebook_like' => 1,
     'google_plus_one' => 1,
+    'linkedin_share_button' => 0,
+    'pinterest_button' => 0,
   );
   $export['service_links_show'] = $strongarm;
 
