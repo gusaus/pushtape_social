@@ -7,6 +7,8 @@ projects[twitter][version] = 6.0-alpha2
 projects[twitter][subdir] = contrib
 
 ; Other contribs.
+projects[follow][version] = 2.x-dev
+projects[follow][subdir] = "contrib"
 projects[http_client][version] = 2.4
 projects[http_client][subdir] = "contrib"
 projects[oauth][version] = 3.2

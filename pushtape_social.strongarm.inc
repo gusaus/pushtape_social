@@ -13,6 +13,27 @@ function pushtape_social_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'follow_site_alignment';
+  $strongarm->value = 'horizontal';
+  $export['follow_site_alignment'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'follow_site_block_title';
+  $strongarm->value = '2';
+  $export['follow_site_block_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'follow_site_icon_style';
+  $strongarm->value = 'large';
+  $export['follow_site_icon_style'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'service_links_category_types';
   $strongarm->value = array();
   $export['service_links_category_types'] = $strongarm;
