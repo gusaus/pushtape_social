@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Social features for Pushtape.
+ */
+
+include_once 'pushtape_social.features.inc';
+
+
