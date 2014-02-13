@@ -39,3 +39,11 @@ features[variable][] = service_links_node_types
 features[variable][] = service_links_show
 features[variable][] = service_links_style
 features[variable][] = service_links_visibility_for_node
+
+
+; Information added by drush on 2014-02-13
+version = "7.x-1.x-panels-dev"
+core = "7.x"
+project = "pushtape_social"
+datestamp = "1392279439"
+
