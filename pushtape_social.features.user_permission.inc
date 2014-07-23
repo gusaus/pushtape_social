@@ -10,40 +10,41 @@
 function pushtape_social_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer oauth.
-  $permissions['administer oauth'] = array(
-    'name' => 'administer oauth',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'oauth_common',
+  // Exported permission: 'access service links'.
+  $permissions['access service links'] = array(
+    'name' => 'access service links',
+    'roles' => array(),
+    'module' => 'service_links',
   );
 
-  // Exported permission: administer oauth connector.
-  $permissions['administer oauth connector'] = array(
-    'name' => 'administer oauth connector',
+  // Exported permission: 'change follow link titles'.
+  $permissions['change follow link titles'] = array(
+    'name' => 'change follow link titles',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
-    'module' => 'oauthconnector',
+    'module' => 'follow',
   );
 
-  // Exported permission: oauth authorize any consumers.
-  $permissions['oauth authorize any consumers'] = array(
-    'name' => 'oauth authorize any consumers',
+  // Exported permission: 'edit own follow links'.
+  $permissions['edit own follow links'] = array(
+    'name' => 'edit own follow links',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
-    'module' => 'oauth_common',
+    'module' => 'follow',
   );
 
-  // Exported permission: oauth register any consumers.
-  $permissions['oauth register any consumers'] = array(
-    'name' => 'oauth register any consumers',
+  // Exported permission: 'edit site follow links'.
+  $permissions['edit site follow links'] = array(
+    'name' => 'edit site follow links',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
-    'module' => 'oauth_common',
+    'module' => 'follow',
   );
 
   return $permissions;
