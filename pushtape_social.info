@@ -2,7 +2,6 @@ name = Pushtape Social
 description = Social features for Pushtape.
 core = 7.x
 package = Pushtape
-version = 7.x-1.0-panels
 project = pushtape_social
 dependencies[] = block
 dependencies[] = ctools
@@ -41,9 +40,7 @@ features[variable][] = service_links_style
 features[variable][] = service_links_visibility_for_node
 
 
-; Information added by drush on 2014-02-13
-version = "7.x-1.x-panels-dev"
+version = "7.x-1.0-beta22"
 core = "7.x"
 project = "pushtape_social"
-datestamp = "1392279439"
 
